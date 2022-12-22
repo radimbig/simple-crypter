@@ -5,7 +5,7 @@
         static string crypt(string text)
         {
             List<char> charArray = text.ToList<char>();
-            string? output = "";
+            string output = "";
             for(int i=0; i<charArray.Count(); i++)
             {
                 charArray[i] = (char)((int)charArray[i]+3);
@@ -21,7 +21,7 @@
         static string decrypt(string text)
         {
             List<char> charArray = text.ToList<char>();
-            string? output = "";
+            string output = "";
             for (int i = 0; i < charArray.Count(); i++)
             {
                 charArray[i] = (char)((int)charArray[i] -3);
